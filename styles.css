@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    padding: 0;
+    transform-style: preserve-3d;
+    user-select: none;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+
+body{
+
+    background-color: #23242c;
+    color: white;
+    margin-top: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.log_title{
+
+    font-family: 'Segoe UI';
+    font-size: 1vw;
+    letter-spacing: 0.1rem;
+
+}
+
+.log{
+
+    display: flex;
+    flex-direction: column;
+    background: #19191f86;
+    width: 25vw;
+    height: 60vh;
+    border-radius: 5%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.inputs_places{
+    height: 41vh;
+    width: inherit;
+    padding-inline: 3vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input{
+
+    font-family: 'Segoe UI';
+    font-size: 1.3vw;
+    background: transparent;
+    border: none;
+    border: 0;
+    transition: border-color 0.6s;
+    top: 0;
+    color: white;
+    height: 4vh;
+    
+}
+
+.input:hover{
+    border-bottom: 1px solid white;
+    transition: border-color 1s ease-in-out;
+}
+
+.input:focus{
+    border-bottom: 1px solid #76d776;;
+    transition: border-color 1s;
+    outline: none;
+    background: transparent;
+}
+
+.input:checked{
+    background: transparent;
+}
+
+.btn_log{
+    font-size: 1vw;
+    padding: 0.6vw;
+    font-family: Segoe UI;
+    color: white;
+    background: #19191F;
+    border: white 1px solid;
+    transition: border-color 0.6s;
+}
+
+.btn_log:hover{
+    transition: border-color 0.6s;
+    border: 1px solid #76d776;
+    cursor: pointer;
+}
+
+h3{
+    color: red;
+    font-family: Segoe UI;
+    position: absolute;
+    top: 100%;
+}
+
+h4{
+    color: olivedrab;
+    font-family: Segoe UI;
+    position: absolute;
+    top: 100%;
+}
+
+h5{
+    position: relative;
+}

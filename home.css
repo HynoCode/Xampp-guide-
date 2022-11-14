@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    padding: 0;
+    transform-style: preserve-3d;
+    user-select: none;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+body{
+
+    background-color: #23242c;
+    color: white;
+    margin-top: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-size: 1.3vw;
+    text-align: justify;
+}
+
+.tl{
+    font-size: 2vw;
+}
+/* ------------------------------------- SLIDER HOME -----------------------------*/
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #14141464;
+}
+ 
+::-webkit-scrollbar-track-piece {
+    background: #141414b1;
+  }
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(46, 46, 46); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.slider-block{
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.slider{
+    text-shadow: 0 10px 10px rgba(0, 0, 8, 0.35);
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.slider img{
+    width: 32%;
+    animation: 2s slider ease-in;
+    padding: 0.5vw;
+}
+
+#img1{
+    animation: 1s slider ease-in;
+}
+#img2{
+    animation: 2.5s slider ease-in;
+}
+#img3{
+    animation: 3s slider ease-in;
+}
+
+@keyframes slider {
+    0% {
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.steps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images{
+    width: 58%;
+    padding-bottom: 7vh;
+    padding-top: 5vh;
+}
+
+.nota{
+    font-size: 0.5vw;
+    color: orange;
+}
+
+.btn_log{
+    font-size: 1vw;
+    padding: 1vw;
+    font-family: Segoe UI;
+    color: white;
+    background: #19191f91;
+    border: white 1px solid;
+    transition: border-color 0.6s;
+}
+
+.btn_log:hover{
+    transition: border-color 0.6s;
+    border: 1px solid #76d776;
+    cursor: pointer;
+}
+
+.footer{
+    height: 27vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh;
+    color: #525252;
+}
+
+i{
+    color: orange;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 95%;
+}
